@@ -1,26 +1,50 @@
 [
     {
-        "id": "ML1234",
-        "title": "Samsung Galaxy A55 5G Dual SIM 256GB 8GB RAM - Azul Oscuro",
-        "description": "El nuevo Galaxy A55 combina potencia, almacenamiento y diseño elegante con conectividad 5G para tu día a día.",
-        "price": 2499999.99,
+        "id": "ML0001",
+        "title": "Samsung Galaxy S25 5g 256gb 12gb RAM navy",
+        "description": "Experiencia visual increíble \nMirá tus series y películas favoritas con la mejor definición a través de su pantalla Dynamic AMOLED 2X de 6.2. Disfrutá de colores brillantes y detalles precisos en todos tus contenidos. \n\nCapacidad y eficiencia \nCon su potente procesador y memoria RAM de 12 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras. \n\nDesbloqueo facial y dactilar \nMáxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido. \n\nCapacidad de almacenamiento ilimitada \nOlvidate de borrar. Con su memoria interna de 256 GB podrás descargar todos los archivos y aplicaciones que necesites, guardar fotos y almacenar tus películas, series y videos favoritos para reproducirlos cuando quieras.",
+        "price": 3000000,
         "images": [
-            "https://mi-ecommerce.com/images/a55-front.jpg",
-            "https://mi-ecommerce.com/images/a55-back.jpg",
-            "https://mi-ecommerce.com/images/a55-side.jpg"
+            "https://i.postimg.cc/ZKTz5cdb/product1-1.png",
+            "https://i.postimg.cc/Y2Nw7VjD/product1-2.png",
+            "https://i.postimg.cc/cCcqcKVG/product1-3.png"
         ],
         "condition": true,
-        "total_sold": 327,
-        "rating_avg_stars": 4,
-        "rating_total_reviews": 120,
-        "stock": 25,
+        "total_sold": 843,
+        "stock": 45,
         "features": [
-            {"name": "Color", "value": "Azul Oscuro"},
-            {"name": "RAM", "value": "8GB"},
-            {"name": "Almacenamiento", "value": "256GB"},
+            {"name": "Color", "value": "Navy"},
+            {"name": "RAM", "value": "12GB"},
+            {"name": "Almacenamiento", "value": "512GB"},
             {"name": "Conectividad", "value": "5G"}
         ],
         "free_shipping": true,
-        "seller_id": "SELLER001"
+        "seller_id": "SE0001",
+        "review_id": "RV0001"
+    },
+    {
+        "id": "ML0002",
+        "title": "Samsung Galaxy A55 5G Dual SIM 256 GB azul claro 8 GB RAM",
+        "description": "Capacidad y eficiencia \nCon su potente procesador y 8 GB de RAM, su computadora logrará un alto rendimiento con una alta velocidad de transmisión de contenido y ejecutará varias aplicaciones al mismo tiempo, sin demoras. \n\nCapacidad de almacenamiento ilimitada \nOlvídate de borrar. Con su memoria interna de 256 GB puedes descargar todos los archivos y aplicaciones que necesites, guardar fotos y almacenar tus películas, series y vídeos favoritos para reproducirlos cuando quieras.",
+        "price": 2499999.99,
+        "images": [
+            "https://i.postimg.cc/RVX56H7c/product2-1.png",
+            "https://i.postimg.cc/7ZWFXrQh/product2-2.png",
+            "https://i.postimg.cc/P5JGm5y0/product2-3.png",
+            "https://i.postimg.cc/fbS6rq6K/product2-4.png"
+        ],
+        "condition": true,
+        "total_sold": 327,
+        "stock": 25,
+        "features": [
+            {"name": "Color", "value": "Celeste"},
+            {"name": "RAM", "value": "8GB"},
+            {"name": "Almacenamiento", "value": "256GB"},
+            {"name": "Conectividad", "value": "5G"},
+            {"name": "Pantalla", "value": "Dynamic AMOLED 2X de 6.2\""}
+        ],
+        "free_shipping": true,
+        "seller_id": "SE0001",
+        "review_id": "RV0002"
     }
 ]

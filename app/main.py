@@ -1,3 +1,7 @@
+from app.models.seller import Seller
+from app.models.product import Product
+from app.models.payment import PaymentMethods
+from app.models.review import Reviews
 from fastapi import FastAPI, HTTPException
 from pathlib import Path
 import json
@@ -50,7 +54,7 @@ def get_product_full(product_id: str):
     if not seller:
         raise HTTPException(status_code=404, detail="Vendedor no encontrado para este producto")
 
-    review = next((r for r in reviews if r["product_id"] == product_id), None)
+    review = next((r for r in reviews if r["id"] == product["review_id"]), None)
     if not review:
         review = {
             "score": 0,
@@ -59,10 +63,10 @@ def get_product_full(product_id: str):
         }
 
     return {
-        "product": product,
-        "seller": seller,
-        "payments": payments,
-        "reviews": review
+        "product": Product(**product),
+        "seller": Seller(**seller),
+        "payments": PaymentMethods(**payments),
+        "reviews": Reviews(**review)
     }
 
 @app.get("/products/{product_id}")
@@ -80,7 +84,7 @@ def get_product(product_id: str):
     product = next((p for p in products if p["id"] == product_id), None)
     if not product:
         raise HTTPException(status_code=404, detail="Producto no encontrado")
-    return product
+    return Product(**product)
 
 @app.get("/sellers/{seller_id}")
 def get_seller(seller_id: str):
@@ -97,7 +101,7 @@ def get_seller(seller_id: str):
     seller = next((s for s in sellers if s["id"] == seller_id), None)
     if not seller:
         raise HTTPException(status_code=404, detail="Vendedor no encontrado")
-    return seller
+    return Seller(**seller)
 
 @app.get("/payments")
 def get_payments():
@@ -111,10 +115,10 @@ def get_payments():
             - cash
     """
     payments = load_json("payments.json")
-    return payments
+    return PaymentMethods(**payments)
 
-@app.get("/reviews/{product_id}")
-def get_reviews(product_id: str):
+@app.get("/reviews/{review_id}")
+def get_reviews(review_id: str):
     """
     Devuelve las calificaciones y comentarios de un producto por su ID.
 
@@ -128,7 +132,14 @@ def get_reviews(product_id: str):
             - reviews: Lista de reseñas individuales.
     """
     reviews = load_json("reviews.json")
-    review = next((r for r in reviews if r["product_id"] == product_id), None)
+    review = next((r for r in reviews if r["id"] == review_id), None)
     if not review:
         raise HTTPException(status_code=404, detail="No hay calificaciones para este producto")
-    return review
+    return Reviews(**review)
+
+@app.get("/")
+def get_root():
+    """
+    Devuelve OK
+    """
+    return {"message": "Welcome"}
