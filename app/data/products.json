@@ -1,0 +1,26 @@
+[
+    {
+        "id": "ML1234",
+        "title": "Samsung Galaxy A55 5G Dual SIM 256GB 8GB RAM - Azul Oscuro",
+        "description": "El nuevo Galaxy A55 combina potencia, almacenamiento y diseño elegante con conectividad 5G para tu día a día.",
+        "price": 2499999.99,
+        "images": [
+            "https://mi-ecommerce.com/images/a55-front.jpg",
+            "https://mi-ecommerce.com/images/a55-back.jpg",
+            "https://mi-ecommerce.com/images/a55-side.jpg"
+        ],
+        "condition": true,
+        "total_sold": 327,
+        "rating_avg_stars": 4,
+        "rating_total_reviews": 120,
+        "stock": 25,
+        "features": [
+            {"name": "Color", "value": "Azul Oscuro"},
+            {"name": "RAM", "value": "8GB"},
+            {"name": "Almacenamiento", "value": "256GB"},
+            {"name": "Conectividad", "value": "5G"}
+        ],
+        "free_shipping": true,
+        "seller_id": "SELLER001"
+    }
+]

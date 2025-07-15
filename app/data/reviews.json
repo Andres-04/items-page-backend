@@ -1,0 +1,33 @@
+[
+    {
+        "id": "REV001",
+        "product_id": "ML1234",
+        "score": 4.5,
+        "total": 120,
+        "reviews": [
+            {
+                "date": "2024-07-10",
+                "comment": "Excelente producto, muy rápido y buena batería.",
+                "score": 5.0,
+                "images": [
+                    "https://mi-ecommerce.com/reviews/rev1-img1.jpg",
+                    "https://mi-ecommerce.com/reviews/rev1-img2.jpg"
+                ]
+            },
+            {
+                "date": "2024-06-25",
+                "comment": "Cumple, pero esperaba mejor calidad de cámara.",
+                "score": 4.0,
+                "images": []
+            },
+            {
+                "date": "2024-06-15",
+                "comment": "Me encanta, pero el cargador no venía incluido.",
+                "score": 4.5,
+                "images": [
+                    "https://mi-ecommerce.com/reviews/rev3-img1.jpg"
+                ]
+            }
+        ]
+    }
+]  

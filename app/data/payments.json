@@ -1,0 +1,19 @@
+{
+    "credit_cards": [
+        "Visa",
+        "Mastercard",
+        "American Express",
+        "Diners Club"
+    ],
+    "debit_cards": [
+        "Visa Débito",
+        "Mastercard Débito",
+        "Maestro"
+    ],
+    "cash": [
+        "Efecty",
+        "Baloto",
+        "PSE",
+        "Pago en tienda"
+    ]
+}

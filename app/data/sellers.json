@@ -1,0 +1,15 @@
+[
+    {
+        "id": "SELLER001",
+        "name": "Samsung Store Oficial",
+        "photo": "https://mi-ecommerce.com/images/seller-profile.jpg",
+        "total_followers": 15200,
+        "total_products": 138,
+        "sales_last_month": 520,
+        "features": [
+            "Envío rápido",
+            "Garantía oficial",
+            "Atención personalizada"
+        ]
+    }
+]
