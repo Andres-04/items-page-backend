@@ -68,7 +68,8 @@ def get_product_full(product_id: str):
         review = {
             "score": 0,
             "total": 0,
-            "reviews": []
+            "reviews": [],
+            "features_review": []
         }
 
     return {

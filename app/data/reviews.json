@@ -86,7 +86,25 @@
                     "https://i.postimg.cc/cCcqcKVG/product1-3.png"
                 ]
             }
-        ]
+        ],
+		"features_review": [
+			{
+				"name": "Relación precio-calidad",
+				"value": 5.0
+			},
+			{
+				"name": "Calidad de la cámara",
+				"value": 4.5
+			},
+			{
+				"name": "Duración de la batería",
+				"value": 4.1
+			},
+			{
+				"name": "Durabilidad",
+				"value": 3.9
+			}
+		]
     },
     {
         "id": "RV0002",
@@ -194,6 +212,24 @@
                     "https://i.postimg.cc/7ZWFXrQh/product2-2.png"
                 ]
             }
-        ]
+        ],
+		"features_review": [
+			{
+				"name": "Relación precio-calidad",
+				"value": 5.0
+            },
+			{
+				"name": "Calidad de la cámara",
+				"value": 4.5
+			},
+			{
+				"name": "Duración de la batería",
+				"value": 4.1
+			},
+			{
+				"name": "Durabilidad",
+				"value": 3.9
+			}
+		]
     }
 ]  

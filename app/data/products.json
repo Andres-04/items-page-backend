@@ -43,7 +43,7 @@
             {"name": "Conectividad", "value": "5G"},
             {"name": "Pantalla", "value": "Dynamic AMOLED 2X de 6.2\""}
         ],
-        "free_shipping": true,
+        "free_shipping": false,
         "seller_id": "SE0001",
         "review_id": "RV0002"
     }
