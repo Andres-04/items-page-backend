@@ -13,7 +13,7 @@
         "total_sold": 843,
         "stock": 45,
         "features": [
-            {"name": "Color", "value": "Navy"},
+            {"name": "Material", "value": "Vidrio templado"},
             {"name": "RAM", "value": "12GB"},
             {"name": "Almacenamiento", "value": "512GB"},
             {"name": "Conectividad", "value": "5G"}
@@ -37,7 +37,7 @@
         "total_sold": 327,
         "stock": 25,
         "features": [
-            {"name": "Color", "value": "Celeste"},
+            {"name": "Material", "value": "Titanio"},
             {"name": "RAM", "value": "8GB"},
             {"name": "Almacenamiento", "value": "256GB"},
             {"name": "Conectividad", "value": "5G"},

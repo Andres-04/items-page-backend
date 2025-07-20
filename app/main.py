@@ -1,6 +1,7 @@
 from app.models.seller import Seller
 from app.models.product import Product
 from app.models.payment import PaymentMethods
+from fastapi.middleware.cors import CORSMiddleware
 from app.models.review import Reviews
 from fastapi import FastAPI, HTTPException
 from pathlib import Path
@@ -8,6 +9,14 @@ import json
 
 # Inicialización de la aplicación FastAPI
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Definición de la ruta donde están guardados los archivos JSON que simulan la base de datos
 path = Path(__file__).parent / "data"
@@ -142,4 +151,4 @@ def get_root():
     """
     Devuelve OK
     """
-    return {"message": "Welcome"}
+    return {"message": "Bienvenido"}
