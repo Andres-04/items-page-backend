@@ -99,8 +99,8 @@ pytest
 ---
 
 ## Notas finales
-✅ Los datos están almacenados en archivos JSON para simular una base de datos.
+* Los datos están almacenados en archivos JSON para simular una base de datos.
 
-✅ Esta API es **solo un prototipo** para fines de la prueba técnica.
+* Esta API es **solo un prototipo** para fines de la prueba técnica.
 
-✅ El código está preparado para escalar fácilmente a una solución más robusta en el futuro.
+* El código está preparado para escalar fácilmente a una solución más robusta en el futuro.
