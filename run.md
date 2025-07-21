@@ -69,7 +69,6 @@ backend/
 │   ├── data/
 │   │   ├── products.json
 │   │   ├── sellers.json
-│   │   ├── payments.json
 │   │   └── reviews.json
 ├── requirements.txt
 ├── run.md
@@ -84,8 +83,18 @@ backend/
 | GET    | `/products/{product_id}/full`  | Retorna producto, vendedor, pagos y reviews  |
 | GET    | `/products/{product_id}`       | Devuelve un producto por ID                  |
 | GET    | `/sellers/{seller_id}`         | Devuelve un vendedor por ID                  |
-| GET    | `/payments`                    | Devuelve los métodos de pago                 |
 | GET    | `/reviews/{product_id}`        | Calificaciones y comentarios del producto    |
+
+---
+
+
+## Ejecutar los Test
+
+Desde la raíz del proyecto ejecutar el siguiente comando:
+
+```bash
+pytest
+```
 
 ---
 
