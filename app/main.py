@@ -1,6 +1,5 @@
 from app.models.seller import Seller
 from app.models.product import Product
-from app.models.payment import PaymentMethods
 from fastapi.middleware.cors import CORSMiddleware
 from app.models.review import Reviews
 from fastapi import FastAPI, HTTPException
@@ -38,7 +37,7 @@ def load_json(file_name: str):
 def get_product_full(product_id: str):
     """
     Devuelve toda la información completa de un producto:
-    producto, vendedor, métodos de pago y reviews.
+    producto, vendedor y reviews.
 
     Args:
         product_id (str): ID del producto a consultar.
@@ -47,12 +46,10 @@ def get_product_full(product_id: str):
         dict: Diccionario que contiene:
             - product (dict): Detalles del producto.
             - seller (dict): Información del vendedor.
-            - payments (dict): Métodos de pago disponibles.
             - reviews (dict): Calificaciones y comentarios.
     """
     products = load_json("products.json")
     sellers = load_json("sellers.json")
-    payments = load_json("payments.json")
     reviews = load_json("reviews.json")
 
     product = next((p for p in products if p["id"] == product_id), None)
@@ -66,6 +63,7 @@ def get_product_full(product_id: str):
     review = next((r for r in reviews if r["id"] == product["review_id"]), None)
     if not review:
         review = {
+            "id": "RV0000",
             "score": 0,
             "total": 0,
             "reviews": [],
@@ -75,7 +73,6 @@ def get_product_full(product_id: str):
     return {
         "product": Product(**product),
         "seller": Seller(**seller),
-        "payments": PaymentMethods(**payments),
         "reviews": Reviews(**review)
     }
 
@@ -113,20 +110,6 @@ def get_seller(seller_id: str):
         raise HTTPException(status_code=404, detail="Vendedor no encontrado")
     return Seller(**seller)
 
-@app.get("/payments")
-def get_payments():
-    """
-    Devuelve los métodos de pago disponibles.
-
-    Returns:
-        dict: Métodos de pago separados por categorías:
-            - credit_cards
-            - debit_cards
-            - cash
-    """
-    payments = load_json("payments.json")
-    return PaymentMethods(**payments)
-
 @app.get("/reviews/{review_id}")
 def get_reviews(review_id: str):
     """
@@ -150,6 +133,6 @@ def get_reviews(review_id: str):
 @app.get("/")
 def get_root():
     """
-    Devuelve OK
+    Devuelve Bienvenido
     """
     return {"message": "Bienvenido"}

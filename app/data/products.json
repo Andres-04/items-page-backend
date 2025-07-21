@@ -1,7 +1,7 @@
 [
     {
         "id": "ML0001",
-        "title": "Samsung Galaxy S25 5g 256gb 12gb RAM navy",
+        "title": "Samsung Galaxy S25 5g 256gb 12gb RAM",
         "description": "Experiencia visual increíble \nMirá tus series y películas favoritas con la mejor definición a través de su pantalla Dynamic AMOLED 2X de 6.2. Disfrutá de colores brillantes y detalles precisos en todos tus contenidos. \n\nCapacidad y eficiencia \nCon su potente procesador y memoria RAM de 12 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras. \n\nDesbloqueo facial y dactilar \nMáxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido. \n\nCapacidad de almacenamiento ilimitada \nOlvidate de borrar. Con su memoria interna de 256 GB podrás descargar todos los archivos y aplicaciones que necesites, guardar fotos y almacenar tus películas, series y videos favoritos para reproducirlos cuando quieras.",
         "price": 3000000,
         "images": [
@@ -24,7 +24,7 @@
     },
     {
         "id": "ML0002",
-        "title": "Samsung Galaxy A55 5G Dual SIM 256 GB azul claro 8 GB RAM",
+        "title": "Samsung Galaxy A55 5G Dual SIM 256 GB 8 GB RAM",
         "description": "Capacidad y eficiencia \nCon su potente procesador y 8 GB de RAM, su computadora logrará un alto rendimiento con una alta velocidad de transmisión de contenido y ejecutará varias aplicaciones al mismo tiempo, sin demoras. \n\nCapacidad de almacenamiento ilimitada \nOlvídate de borrar. Con su memoria interna de 256 GB puedes descargar todos los archivos y aplicaciones que necesites, guardar fotos y almacenar tus películas, series y vídeos favoritos para reproducirlos cuando quieras.",
         "price": 2499999.99,
         "images": [

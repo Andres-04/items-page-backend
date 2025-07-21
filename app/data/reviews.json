@@ -9,8 +9,7 @@
                 "comment": "Buen rendimiento, pero esperaba más duración de batería.",
                 "score": 4.5,
                 "images": [
-                    "https://i.postimg.cc/ZKTz5cdb/product1-1.png",
-                    "https://i.postimg.cc/Y2Nw7VjD/product1-2.png"
+                    "https://i.postimg.cc/nVC692Mf/imagen.png"
                 ]
             },
             {
@@ -30,7 +29,7 @@
                 "comment": "Excelente producto, me llegó muy rápido.",
                 "score": 5.0,
                 "images": [
-                    "https://i.postimg.cc/ZKTz5cdb/product1-1.png"
+                    "https://i.postimg.cc/nVC692Mf/imagen.png"
                 ]
             },
             {
@@ -42,7 +41,7 @@
             {
                 "date": "2024-04-25",
                 "comment": "Muy buena opción si no quieres gastar tanto.",
-                "score": 4.5,
+                "score": 3.5,
                 "images": []
             },
             {
@@ -50,8 +49,8 @@
                 "comment": "Funciona bien para el día a día, pantalla decente.",
                 "score": 4.0,
                 "images": [
-                    "https://i.postimg.cc/ZKTz5cdb/product1-1.png",
-                    "https://i.postimg.cc/cCcqcKVG/product1-3.png"
+                    "https://i.postimg.cc/SszGLD5J/20221120-180008.jpg",
+                    "https://i.postimg.cc/X75mQvw2/IMG-20181027-173513.jpg"
                 ]
             },
             {
@@ -74,16 +73,18 @@
             },
             {
                 "date": "2024-02-10",
-                "comment": "El sonido no es tan fuerte como esperaba.",
-                "score": 3.0,
-                "images": []
+                "comment": "Llego roto.",
+                "score": 1.0,
+                "images": [
+					"https://i.postimg.cc/tJQNBFQD/1366-2000.jpg"
+				]
             },
             {
                 "date": "2024-01-25",
                 "comment": "Buena calidad por su precio, recomendada la compra.",
                 "score": 4.0,
                 "images": [
-                    "https://i.postimg.cc/cCcqcKVG/product1-3.png"
+                    "https://i.postimg.cc/2SFJNX9h/cerrar-mujer-sosteniendo-telefono.jpg"
                 ]
             }
         ],
@@ -112,105 +113,105 @@
         "total": 15,
         "reviews": [
             {
-                "date": "2024-07-10",
+                "date": "2025-07-10",
                 "comment": "Excelente producto, muy rápido y buena batería.",
                 "score": 5.0,
                 "images": [
-                    "https://i.postimg.cc/RVX56H7c/product2-1.png",
-                    "https://i.postimg.cc/7ZWFXrQh/product2-2.png"
+                    "https://i.postimg.cc/nVC692Mf/imagen.png"
                 ]
             },
             {
-                "date": "2024-06-25",
+                "date": "2025-06-25",
                 "comment": "Cumple, pero esperaba mejor calidad de cámara.",
                 "score": 4.0,
-                "images": []
+                "images": [
+					"https://i.postimg.cc/SszGLD5J/20221120-180008.jpg"
+				]
             },
             {
-                "date": "2024-06-15",
-                "comment": "Me encanta, pero el cargador no venía incluido.",
+                "date": "2025-06-15",
+                "comment": "Me encanta, la camara es excelente.",
                 "score": 4.5,
                 "images": [
-                    "https://i.postimg.cc/RVX56H7c/product2-1.png"
+                    "https://i.postimg.cc/mgGqqGjT/hermosa-mujer-sosteniendo-su-perro.jpg",
+					"https://i.postimg.cc/X75mQvw2/IMG-20181027-173513.jpg"
                 ]
             },
             {
-                "date": "2024-05-20",
-                "comment": "Funciona perfecto, la pantalla se ve muy bien.",
-                "score": 4.5,
+                "date": "2025-05-20",
+                "comment": "Muy bonito pero le esta fallando el sonido. Ya le solicite el cambio al vendedor",
+                "score": 2.0,
                 "images": []
             },
             {
-                "date": "2024-05-01",
+                "date": "2025-05-01",
                 "comment": "Entrega rápida, pero la caja llegó golpeada.",
                 "score": 3.5,
                 "images": []
             },
             {
-                "date": "2024-04-28",
+                "date": "2025-04-28",
                 "comment": "Muy buen equipo para su precio, recomendado.",
                 "score": 5.0,
-                "images": []
+                "images": [
+					"https://i.postimg.cc/2SFJNX9h/cerrar-mujer-sosteniendo-telefono.jpg"
+				]
             },
             {
-                "date": "2024-04-15",
-                "comment": "Los materiales se sienten muy resistentes.",
-                "score": 4.0,
+                "date": "2025-04-15",
+                "comment": "Llego dañado. Pediré el rembolso.",
+                "score": 2.0,
                 "images": [
-                    "https://i.postimg.cc/RVX56H7c/product2-1.png"
+                    "https://i.postimg.cc/tJQNBFQD/1366-2000.jpg"
                 ]
             },
             {
-                "date": "2024-03-30",
+                "date": "2025-03-30",
                 "comment": "Todo bien, pero esperaba mejor duración de batería.",
                 "score": 3.5,
                 "images": []
             },
             {
-                "date": "2024-03-18",
+                "date": "2025-03-18",
                 "comment": "Muy bonito diseño y fácil de configurar.",
                 "score": 4.0,
-                "images": [
-                    "https://i.postimg.cc/7ZWFXrQh/product2-2.png"
-                ]
+                "images": []
             },
             {
-                "date": "2024-03-01",
+                "date": "2025-03-01",
                 "comment": "La cámara es increíble para este rango de precio.",
                 "score": 4.5,
                 "images": []
             },
             {
-                "date": "2024-02-20",
+                "date": "2025-02-20",
                 "comment": "No tuve problemas, funciona perfecto.",
                 "score": 5.0,
                 "images": []
             },
             {
-                "date": "2024-02-05",
+                "date": "2025-02-05",
                 "comment": "Buena relación calidad/precio, pero esperaba más almacenamiento.",
                 "score": 4.0,
                 "images": []
             },
             {
-                "date": "2024-01-22",
+                "date": "2025-01-22",
                 "comment": "La pantalla tiene buenos colores, pero es un poco frágil.",
                 "score": 3.5,
                 "images": []
             },
             {
-                "date": "2024-01-10",
+                "date": "2025-01-10",
                 "comment": "Me sorprendió la velocidad del sistema operativo.",
                 "score": 4.5,
                 "images": []
             },
             {
-                "date": "2023-12-25",
+                "date": "2024-12-25",
                 "comment": "Excelente para regalo, mi pareja quedó feliz.",
                 "score": 5.0,
-                "images": [
-                    "https://i.postimg.cc/7ZWFXrQh/product2-2.png"
-                ]
+                "images": []
             }
         ],
 		"features_review": [
