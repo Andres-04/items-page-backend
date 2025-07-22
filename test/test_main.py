@@ -1,13 +1,8 @@
 from fastapi.testclient import TestClient
+from app.models.product import Product
 from app.main import app
 
 client = TestClient(app)
-
-
-def test_root():
-    response = client.get("/")
-    assert response.status_code == 200
-    assert response.json() == {"message": "Bienvenido"}
 
 
 def test_get_product_found():
@@ -58,31 +53,38 @@ def test_get_product_full_not_found():
 
 
 def test_get_product_full_seller_not_found(monkeypatch):
-    def mock_load_json(file):
-        if file == "products.json":
-            return [{"id": "ML0001", "seller_id": "NO_EXISTE", "review_id": "RV0001"}]
-        if file == "sellers.json":
-            return []
-        if file == "reviews.json":
-            return []
-    from app.main import load_json
-    monkeypatch.setattr("app.main.load_json", mock_load_json)
+    def mock_get_product(product_id):
+        return Product(**
+            {
+                "id": product_id, 
+                "title": "Vidrio Templado",
+                "price": 9999,
+                "seller_id": "NO_EXISTE", 
+                "review_id": "RV0001"
+            }
+        )
+
+    from app.main import get_product
+    monkeypatch.setattr("app.main.get_product", mock_get_product)
 
     response = client.get("/products/ML0001/full")
     assert response.status_code == 404
 
 
-def test_get_product_full_reviews_empty(monkeypatch):
-    def mock_load_json(file):
-        if file == "products.json":
-            return [{"id": "ML0001", "title": "title", "price": 1, "seller_id": "SE0001", "review_id": "NO_EXISTE"}]
-        if file == "sellers.json":
-            return [{"id": "SE0001", "name": "Mock Seller"}]
-        if file == "reviews.json":
-            return []
-    from app.main import load_json
-    monkeypatch.setattr("app.main.load_json", mock_load_json)
+def test_get_product_full_reviews_not_found(monkeypatch):
+    def mock_get_product(product_id):
+        return Product(**
+            {
+                "id": product_id, 
+                "title": "Vidrio Templado",
+                "price": 9999,
+                "seller_id": "SE0001", 
+                "review_id": "NO_EXISTE"
+            }
+        )
+    
+    from app.main import get_product
+    monkeypatch.setattr("app.main.get_product", mock_get_product)
 
     response = client.get("/products/ML0001/full")
-    assert response.status_code == 200
-    assert response.json()["reviews"]["score"] == 0
+    assert response.status_code == 404

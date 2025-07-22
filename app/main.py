@@ -48,32 +48,14 @@ def get_product_full(product_id: str):
             - seller (dict): Información del vendedor.
             - reviews (dict): Calificaciones y comentarios.
     """
-    products = load_json("products.json")
-    sellers = load_json("sellers.json")
-    reviews = load_json("reviews.json")
-
-    product = next((p for p in products if p["id"] == product_id), None)
-    if not product:
-        raise HTTPException(status_code=404, detail="Producto no encontrado")
-
-    seller = next((s for s in sellers if s["id"] == product["seller_id"]), None)
-    if not seller:
-        raise HTTPException(status_code=404, detail="Vendedor no encontrado para este producto")
-
-    review = next((r for r in reviews if r["id"] == product["review_id"]), None)
-    if not review:
-        review = {
-            "id": "RV0000",
-            "score": 0,
-            "total": 0,
-            "reviews": [],
-            "features_review": []
-        }
+    product = get_product(product_id)
+    seller = get_seller(product.seller_id)
+    review = get_reviews(product.review_id)
 
     return {
-        "product": Product(**product),
-        "seller": Seller(**seller),
-        "reviews": Reviews(**review)
+        "product": product,
+        "seller": seller,
+        "reviews": review
     }
 
 @app.get("/products/{product_id}")
@@ -129,10 +111,3 @@ def get_reviews(review_id: str):
     if not review:
         raise HTTPException(status_code=404, detail="No hay calificaciones para este producto")
     return Reviews(**review)
-
-@app.get("/")
-def get_root():
-    """
-    Devuelve Bienvenido
-    """
-    return {"message": "Bienvenido"}
